@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
-    <title>Website project template</title>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Website project</title>
 </head>
 <script>
     const loadComponents = (id, url) =>  {
@@ -16,16 +16,26 @@
     }
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        loadComponents('contact', 'src/sections/contact.html');
-        loadComponents('footer', 'src/sections/footer.html');
+        loadComponents('header', '/sections/header.html');
+        loadComponents('mobile-header', '/sections/mobile-navBar.html');
+        loadComponents('hero', '/sections/hero.html');
+        loadComponents('contact', '/sections/contact.html');
+        loadComponents('yellowSection', '/sections/yellowSection.html');
+        loadComponents('footer', '/sections/footer.html');
+        loadComponents('page1_section1', '/sections/page1_section1.html');
+        loadComponents('page1_section2', '/sections/page1_section2.html');
     }
 </script>
 <body>
+    <div id="mobile-header"></div>
     <div id="header"></div>
     <div id="hero"></div>
-    <div id="contact"></div>
+    <div id="page1_section1"></div>
+    <div id="page1_section2"></div>
+    <div id="yellowSection"></div>
     <div id="footer"></div>
+
+    <script src="/scripts/header.js" defer></script>
+
 </body>
 </html>
